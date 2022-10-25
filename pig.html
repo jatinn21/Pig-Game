@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="pig.css" />
+  </head>
+  <body>
+        <!--  PLAYER 1   -->
+      <div class="box player0" id="p0">
+        Player 1  
+        <br><p class="P0Total" style="font-size:150px;padding-top:30px;color: #fc0055c2;"></p>
+          <div class="P0score"> 
+                Current Score 
+                <p class="P0number">&nbsp;</p>
+              </div>
+          </div>
+
+
+        <!--  PLAYER 2  -->
+      <div class="box player1" id="p1" >
+        Player 2  
+        <br><p class="P1Total" style="font-size: 150px;padding-top:30px"></p>
+
+        <div class="P1score">
+                Current Score 
+                <p class="P1number"> &nbsp;</p>
+          </div>
+        </div>
+
+        <!-- DICE IMAGE -->
+      <div class="diceImg">
+        <img src="dice-1.png" id="diceimg" alt="">
+      </div>  
+
+      <!--  NEW GAME BUTTON -->
+       <button type="submit" class="newGame" onclick="newGame()"> New &nbsp;Game 🔁</button>
+
+      <!--  BUTTON TO ROLL THE DICE -->
+       <button type="submit" class="roll" onclick="roll()"> Roll &nbsp;a&nbsp; die 🎲</button>
+
+      <!--  BUTTON TO HOLD THE SCORE -->
+       <button type="submit" class="hold"  onclick="holdScore()"> Hold &nbsp; 🕹️</button>
+
+       <span class="youGot1">Oops, You Got 1</span>
+
+       <span class="youWin">🎊 CONGRATS, PLAYER <span class="winner" style="font-size: 30px;">1</span> WON. 🎉</span>
+
+       <span class="Message"><span style="font-size: 34px;"> PLAYER </span><span class="activePlayer"
+        style="font-size: 39px;"> 1</span>&nbsp;HAS THROWED THE DICE</span>
+
+
+    <h5 class="name hidden">- BY JATIN SHARMA</h5>
+</p>
+    <script src="pig.js"></script>
+  </body>
+</html>

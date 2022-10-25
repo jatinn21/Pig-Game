@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  /* background-color: linear-gradient(to left, #753682 10%, #bf2e34 100%); */
+  background-image: linear-gradient(to top left, #cb3da5 -5%, #bf2e34 80%);
+  font-family: 'Nunito', sans-serif;
+  /* background-image: (to top left, #753682 0%, #bf2e34 100%); */
+}
+
+.name {
+  position: absolute;
+  top: 94.7%;
+  left: 83%;
+  /* display: none; */
+  /* font-size: 15px; */
+  text-shadow: 1px 2px rgb(59, 55, 55);
+  font-family: 'Press Start 2P', cursive;
+  /* font-variant-caps: all-petite-caps; */
+  /* opacity: 0; */
+  animation-name: name;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes name {
+  0% {
+    opacity: 0.3;
+    font-size: 11px;
+
+    /* display: none; */
+  }
+  5% {
+    opacity: 0.5;
+    font-size: 11px;
+
+    /* text-shadow: 7px -13px grey; */
+  }
+
+  10% {
+    opacity: 0.8;
+    text-shadow: none;
+
+    font-size: 12px;
+  }
+
+  25% {
+    opacity: 0.9;
+    text-shadow: 1px -1px rgb(195, 175, 175);
+    font-size: 11px;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 1px 4px grey;
+    font-size: 13px;
+  }
+  75% {
+    opacity: 1;
+
+    text-shadow: 19px 17px rgba(49, 47, 47, 0.869);
+    font-size: 10px;
+  }
+  82% {
+    opacity: 0.71;
+
+    text-shadow: 19px 17px rgba(49, 47, 47, 0.869);
+    font-size: 10px;
+  }
+  90% {
+    /* opacity: .8; */
+
+    color: white;
+    text-shadow: 15px -18px rgb(0, 0, 0);
+
+    /* text-shadow: 15px -46px rgba(249, 249, 249, 0.8); */
+    font-size: 11px;
+    opacity: 0.5;
+    /* animation-delay: 1s !important; */
+  }
+  100% {
+    /* text-shadow: 7px -13px grey; */
+    text-shadow: none;
+    font-size: 12px;
+    opacity: 0.1;
+  }
+}
+
+.player0 {
+  opacity: 0.7;
+  font-variant-caps: all-petite-caps;
+  font-size: 45px;
+  padding-top: 48px;
+  color: #ff0056;
+  font-weight: 900;
+  border-radius: 5% 0% 0% 5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 580px;
+  width: 500px;
+  position: absolute;
+  left: 15.26%;
+  text-align: center;
+  top: 15%;
+  box-shadow: -2px -1px 68px 11px rgba(0, 0, 0, 0.788),
+    -15px -4px 88px -8px rgba(157, 149, 149, 0.766);
+}
+
+.P0score {
+  height: 90px;
+  width: 200px;
+  position: absolute;
+  background-color: #fc0055c2;
+  top: 72%;
+  left: 32%;
+  color: white;
+  opacity: 0.9;
+  font-size: 24px;
+}
+
+.P1score {
+  height: 90px;
+  width: 200px;
+  position: absolute;
+  background-color: ghostwhite;
+  color: rgb(0, 0, 0);
+  top: 72%;
+  left: 32%;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.P0number,
+.P1number {
+  /* position: absolute; */
+  /* justify-content: center; */
+  position: absolute;
+  /* justify-content: center; */
+  font-size: 70px;
+  top: 8px;
+  /* text-align: center; */
+  /* justify-content: center; */
+  /* left: 30%; */
+  /* text-align: center; */
+  /* justify-items: center; */
+  /* text-align: center; */
+  padding-left: 35%;
+  /* justify-self: center; */
+  /* justify-content: center; */
+  /* left: 30%; */
+}
+
+.player1 {
+  font-variant-caps: all-petite-caps;
+  font-size: 45px;
+  padding-top: 48px;
+  font-weight: 900;
+  border-radius: 0% 5% 5% 0%;
+  box-shadow: 17px 6px 78px 1px rgba(0, 0, 0, 0.71), 54px -11px 211px -8px grey;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 580px;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 15%;
+}
+
+.diceImg {
+  position: absolute;
+  top: 33%;
+  left: 47%;
+}
+
+.diceImg img {
+  height: 90px;
+  width: 90px;
+}
+
+/* for new game button */
+.newGame {
+  position: absolute;
+  font-size: 30px;
+  font-variant-caps: all-petite-caps;
+  left: 42.8%;
+  top: 17.6%;
+  border: none;
+  padding: 1px 25px;
+  opacity: 0.75;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 450;
+  border-radius: 30px;
+  border: solid 0.81px black;
+  cursor: pointer;
+}
+
+.newGame:hover,
+.roll:hover,
+.hold:hover {
+  font-weight: 550;
+  opacity: 1;
+}
+
+/* for rolling a die */
+.roll {
+  position: absolute;
+  font-size: 30px;
+  font-variant-caps: all-petite-caps;
+  left: 43.1%;
+  top: 52%;
+  border: none;
+  padding: 0px 25px;
+  opacity: 0.65;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 450;
+  border-radius: 30px;
+  border: solid 0.81px black;
+  cursor: pointer;
+}
+
+/* to hold the die */
+.hold {
+  position: absolute;
+  font-size: 30px;
+  font-variant-caps: all-petite-caps;
+  left: 45%;
+  top: 59%;
+  border: none;
+  padding: 0px 25px;
+  opacity: 0.75;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 450;
+  border-radius: 30px;
+  border: solid 0.81px black;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.Message {
+  position: absolute;
+  top: 85%;
+  left: 31.6% !important;
+  word-spacing: 15px;
+  /* width: 1600px; */
+  font-size: 27px;
+  /* height: 80px; */
+  background-color: rgb(199, 167, 167);
+  color: #282828;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  background: transparent;
+  text-align: center;
+}
+
+.youGot1 {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 700px;
+  font-size: 38px;
+  height: 80px;
+  background-color: white;
+  color: #c7b3b3;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  background: transparent;
+  text-align: center;
+}
+
+.youWin {
+  /* display: none; */
+  position: absolute;
+  top: 8%;
+  /* left: 18% !important; */
+  font-size: 25px;
+  font-weight: 800;
+  /* left: 10%; */
+  /* left: 5%; */
+  color: honeydew;
+  /* word-spacing: 15px; */
+  font-family: 'Nunito', sans-serif;
+  height: 39px;
+  left: 24%;
+  color: rgb(124 236 21 / 79%);
+  background-color: azure;
+  padding: 1px 10px;
+  border-radius: 14px;
+  font-family: 'Nunito', sans-serif;
+}
